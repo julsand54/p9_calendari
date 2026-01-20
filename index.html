@@ -23,9 +23,8 @@
             grid-template-columns: repeat(7, 1fr);
             grid-template-rows: 2fr repeat(7, 1fr);
             gap: 10px;
-            margin: auto;
             font-family: "Sligoil";
-            width: 50vw;
+            width: 100vw;
             height: 50vw;
             
         }
@@ -48,7 +47,10 @@
         }
         em{
             font-weight: 100;
-            font-size: 20px;
+            font-size: .6em;
+            position: absolute;
+            top: 2.5em;
+            left: 4.2em;
             
             
         }
@@ -75,6 +77,10 @@
             font-size: 0.8em;
             color: #666;
         }
+        #info{
+            position: relative;
+            
+        }
     </style>
 </head>
 <body>
@@ -95,15 +101,14 @@
     <p class="mx">31</p>
       <!--dias del mes-->
     <p class="ma">1</p>
-    <div class="ma">
+    <div class="ma" id="info">
         <p>2</p>
         <em>Julia</em>
     </div>  
     <div class="ma">
         <p>3</p>
-        <em></em>
     </div>
-    <div class="ma">
+    <div class="ma" id="info">
         <p>4</p>    
         <em>Aroa</em>
     </div>
