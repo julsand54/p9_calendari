@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada Calendario 2026</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: "Sligoil";
+            src:
+                local("Sligoil"),
+                url("fuentes/SligoilVF.ttf") format("truetype"),
+                url("fuentes/SligoilVF.woff") format("woff");
+        }
+
+        body {
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .cover-container {
+            width: 100vw;
+            height: 50vw;
+            font-family: "Sligoil";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: white;
+            border: 1px solid #ffffff;
+        }
+
+        /* Contenedor del patrón de líneas de símbolos */
+        .symbol-lines-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            z-index: 1;
+            opacity: 0.25;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .symbol-row {
+            white-space: nowrap;
+            font-size: 2vw;
+            color: rgb(255, 204, 0);
+            letter-spacing: 1.5vw; /* Espacio entre los símbolos de la línea */
+            width: 120%; /* Un poco más ancho para que no se corten los bordes */
+            margin-left: -10%;
+        }
+
+        /* Desplazamos las líneas pares para que no queden alineadas verticalmente */
+        .symbol-row:nth-child(even) {
+            margin-left: 0;
+            color: #fc4242; /* Un tono ligeramente distinto para variar */
+        }
+
+        /* Título Principal */
+        .main-content {
+            position: relative;
+            z-index: 10;
+            background: rgb(255, 255, 255); 
+            padding: 40px 80px;
+            text-align: center;
+            /* El borde doble da un toque editorial */
+            border: 5px double #ffffff;
+        }
+
+        .year {
+            font-size: 18vw;
+            line-height: 0.8;
+            display: block;
+            color: #000;
+        }
+
+        .label {
+            font-size: 3vw;
+            letter-spacing: 0.6em;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .cat-footer {
+            font-size: 4vw;
+            margin-top: 15px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cover-container">
+        <div class="symbol-lines-bg">
+            <div class="symbol-row">🡠 ★ ⚙ ≽^-˕-^≼ ◑ ● ♫ ☆ 🡡 ◒ 🡢 ≽^-˕-^≼ ⚙ ◐ 🡠 ★ ⚙ ≽^-˕-^≼ ◑ ● ♫ ☆</div>
+            <div class="symbol-row">◒ 🡣 ◑ ≽^-˕-^≼ ☆ 🡡 ♫ ● 🡠 ⚙ ★ ≽^-˕-^≼ 🡢 ◐ ◒ 🡣 ◑ ≽^-˕-^≼ ☆ 🡡 ♫</div>
+            <div class="symbol-row">🡢 ⚙ ♫ ≽^-˕-^≼ ● ◑ ★ 🡡 ☆ ◒ 🡠 ≽^-˕-^≼ 🡣 ⚙ 🡢 ⚙ ♫ ≽^-˕-^≼ ● ◑ ★</div>
+            <div class="symbol-row">★ 🡠 ◒ ≽^-˕-^≼ ◑ ⚙ 🡢 ♫ ● ☆ 🡡 ≽^-˕-^≼ ◐ 🡣 ★ 🡠 ◒ ≽^-˕-^≼ ◑ ⚙ 🡢</div>
+            <div class="symbol-row">⚙ 🡡 ☆ ≽^-˕-^≼ ♫ ◑ ● 🡢 ◒ 🡠 ★ ≽^-˕-^≼ ◐ ⚙ ⚙ 🡡 ☆ ≽^-˕-^≼ ♫ ◑ ●</div>
+            <div class="symbol-row">◑ ● 🡣 ≽^-˕-^≼ 🡡 ★ ⚙ ♫ ☆ ◒ 🡢 ≽^-˕-^≼ ◐ 🡠 ◑ ● 🡣 ≽^-˕-^≼ 🡡 ★ ⚙</div>
+            <div class="symbol-row">🡠 ★ ⚙ ≽^-˕-^≼ ◑ ● ♫ ☆ 🡡 ◒ 🡢 ≽^-˕-^≼ ⚙ ◐ 🡠 ★ ⚙ ≽^-˕-^≼ ◑ ● ♫</div>
+        </div>
+
+        <div class="main-content">
+            <span class="label">CALENDARIO</span>
+            <span class="year">2026</span>
+            <span class="cat-footer">≽^-˕-^≼</span>
+        </div>
+    </div>
+
+</body>
+</html>
