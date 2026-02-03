@@ -36,7 +36,7 @@
             border: 1px solid #ffffff;
         }
 
-        /* Contenedor del patrón de líneas de símbolos */
+        /* patrón */
         .symbol-lines-bg {
             position: absolute;
             top: 0;
@@ -55,43 +55,40 @@
         .symbol-row {
             white-space: nowrap;
             font-size: 2vw;
-            color: rgb(255, 204, 0);
-            letter-spacing: 1.5vw; /* Espacio entre los símbolos de la línea */
-            width: 120%; /* Un poco más ancho para que no se corten los bordes */
+            color: rgb(137, 137, 137);
+            letter-spacing: 1.5vw;
             margin-left: -10%;
         }
 
-        /* Desplazamos las líneas pares para que no queden alineadas verticalmente */
+        /* Desplazamos las líneas pares para que no queden alineadas */
         .symbol-row:nth-child(even) {
             margin-left: 0;
-            color: #fc4242; /* Un tono ligeramente distinto para variar */
+             
         }
 
         /* Título Principal */
         .main-content {
             position: relative;
-            z-index: 10;
             background: rgb(255, 255, 255); 
             padding: 40px 80px;
             text-align: center;
-            /* El borde doble da un toque editorial */
-            border: 5px double #ffffff;
+            
         }
-
+        /* Año*/
         .year {
             font-size: 18vw;
             line-height: 0.8;
             display: block;
             color: #000;
         }
-
+        /* Calendario*/
         .label {
             font-size: 3vw;
             letter-spacing: 0.6em;
             margin-bottom: 20px;
             display: block;
         }
-
+        /* gato  */
         .cat-footer {
             font-size: 4vw;
             margin-top: 15px;
